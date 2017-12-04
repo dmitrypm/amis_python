@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['smax',['smax',['../namespace_task1.html#a517c30c464db1e52a593515439139338',1,'Task1']]]
+  ['largest_5fgroup',['largest_group',['../namespace_task3.html#a5e9305edf588069d3b9efdbc668b116d',1,'Task3']]]
 ];

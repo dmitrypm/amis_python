@@ -1,16 +1,29 @@
 numbers = input("Введіть послідовність натуральних чисел через пробіл: ").split()
 
 
-def countm(list, ind = 0 , crt = 1, cmax = 1):
+def largest_group(list, ind = 0 , group = 1, max_group = 1):
+    """
+
+    Arguments:
+        list
+    
+    Returns:
+        The largest group
+
+    Example:
+        >>>[1, 2, 2, 2, 3, 3,]
+        3
+
+    """
     if ind == len(list) - 1:
-        return cmax
+        return max_group
     elif list[ind] == list[ind + 1]:
-        crt += 1
-        if cmax < crt:
-            cmax = crt
+        group += 1
+        if max_group < group:
+            max_group = group
     else:
-        crt = 1
-    return countm(list, ind + 1, crt, cmax)
+        group = 1
+    return largest_group(list, ind + 1, group, max_group)
 
 
-print(countm(numbers))
+print(largest_group(numbers))
